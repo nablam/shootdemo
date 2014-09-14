@@ -1,1 +1,12 @@
 C:\Users\Public\Documents\Unity Projects\SimpleGame\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\__mainFolder\Git_Group_Game\shootdemo\Temp\bin\Debug\Assembly-CSharp.dll
+C:\__mainFolder\Git_Group_Game\shootdemo\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\__mainFolder\Git_Group_Game\shootdemo\Temp\bin\Debug\UnityEditor.dll
+C:\__mainFolder\Git_Group_Game\shootdemo\Temp\bin\Debug\UnityEngine.dll
+C:\__mainFolder\Git_Group_Game\shootdemo\Temp\bin\Debug\Mono.Cecil.dll
+C:\__mainFolder\Git_Group_Game\shootdemo\Temp\bin\Debug\nunit.framework.dll
+C:\__mainFolder\Git_Group_Game\shootdemo\Temp\bin\Debug\Unity.DataContract.dll
+C:\__mainFolder\Git_Group_Game\shootdemo\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\__mainFolder\Git_Group_Game\shootdemo\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\__mainFolder\Git_Group_Game\shootdemo\obj\Debug\Assembly-CSharp.dll
+C:\__mainFolder\Git_Group_Game\shootdemo\obj\Debug\Assembly-CSharp.pdb
