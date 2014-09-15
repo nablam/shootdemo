@@ -31,6 +31,8 @@ public class Projectile : MonoBehaviour
             Enemy enemy = (Enemy)otherObject.gameObject.GetComponent("Enemy");
             Instantiate(ExplosionPrefab, enemy.transform.position, enemy.transform.rotation);
             enemy.SetPositionAndSpeed();
+        
+            //Destroy(ExplosionPrefab.transform.GetComponent<ParticleSystem>());
             Destroy(gameObject);
         }
     }
