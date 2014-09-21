@@ -1,7 +1,11 @@
-﻿using UnityEngine;
+﻿
+
+
+using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour {
+public class Player_360 : MonoBehaviour {
+	public GameObject[] arra;
 
 	public float PlayerSpeed;
 	public GameObject ProjectilePrefab;
@@ -11,11 +15,26 @@ public class Player : MonoBehaviour {
 	public GameObject playerExplosion;
 
 	// Update is called once per frame
-
-
 	void Update () {
+		float rotation = Input.GetAxis("Horizontal") * PlayerSpeed * Time.deltaTime;
+		this.transform.Rotate(Vector3.forward * rotation * -20);
+		float amtToMove = Input.GetAxis("Vertical") * PlayerSpeed * Time.deltaTime;
+
+		transform.Translate(Vector3.up * amtToMove);
+		//rigidbody.AddForce(Vector3.up * amtToMove);
+
+		if (transform.position.x <= -6.5f)
+			transform.position = new Vector3 (6.4f, transform.position.y, transform.position.z);
+		else if (transform.position.x >= 6.5f)
+			transform.position = new Vector3 (-6.4f, transform.position.y, transform.position.x);
+
+		if (transform.position.y <= -4f)
+			transform.position = new Vector3 (transform.position.x, 9.5f, transform.position.z);
+		else if (transform.position.y >= 9.5f)
+			transform.position = new Vector3 (transform.position.x, -4f, transform.position.z);
 
 
+		/*
 		// Amount to move
 		float amtToMove = Input.GetAxis("Horizontal") * PlayerSpeed * Time.deltaTime;
 		float moveZ = Input.GetAxis("Vertical") * PlayerSpeed * Time.deltaTime;
@@ -23,8 +42,7 @@ public class Player : MonoBehaviour {
 		float tiltAroundz = Input.GetAxis("Horizontal") * tiltAngle;
 		Quaternion target = Quaternion.Euler(0, -tiltAroundz, 0);
 		transform.rotation = Quaternion.Slerp(transform.rotation, target, Time.deltaTime * smooth);
-
-		if(transform.position.x >= 5.0){transform.position=new Vector3( -5.3f,transform.position.y,transform.position.z);}
+		
 
 		// Move the player
 		//transform.Translate(Vector3.right * amtToMove);
@@ -35,6 +53,8 @@ public class Player : MonoBehaviour {
 			transform.position = new Vector3 (7.4f, transform.position.y, transform.position.z);
 		else if (transform.position.x >= 7.5f)
 			transform.position = new Vector3 (-7.4f, transform.position.y, transform.position.x);
+
+		*/
 
 		if (Input.GetKeyDown("space")) {
 			// Fire projectile
